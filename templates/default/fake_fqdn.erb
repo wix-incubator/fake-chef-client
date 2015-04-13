@@ -1,0 +1,7 @@
+Ohai.plugin(:FakeChef) do
+  provides "fqdn", "ipaddress"
+  collect_data(:default) do
+    fqdn "<%= @fake_fqdn%>"
+    ipaddress "<%= @fake_ip%>"
+  end
+end
